@@ -1,5 +1,5 @@
 {% set name = "openinference-instrumentation-bedrock" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openinference_instrumentation_bedrock-{{ version }}.tar.gz
-  sha256: 91eabef59ef0c5c7ff5ad93a997ee0ee29af51f2c6519ff536b7e5d72499c655
+  sha256: c151477cfb5d89ef0a3061d0aa5d581bd34efa753dad5f6bc03e0cdd41e7cff0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -27,6 +27,7 @@ requirements:
     - openinference-instrumentation >=0.1.12
     - openinference-semantic-conventions >=0.1.9
     - wrapt
+    - dacite
     - botocore
 
 test:
