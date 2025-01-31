@@ -27,6 +27,7 @@ requirements:
     - openinference-instrumentation >=0.1.12
     - openinference-semantic-conventions >=0.1.9
     - wrapt
+    - dacite
     - botocore
 
 test:
