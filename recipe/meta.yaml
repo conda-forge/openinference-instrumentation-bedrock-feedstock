@@ -1,5 +1,5 @@
 {% set name = "openinference-instrumentation-bedrock" %}
-{% set version = "0.1.31" %}
+{% set version = "0.1.32" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openinference_instrumentation_bedrock-{{ version }}.tar.gz
-  sha256: 83e8044a0dd639cae12aa95443a1a879e6cd4efb3bceb656bbdbf21b24631fb4
+  sha256: 273520591b034464022615ab810408175df5986da538df1dd1752500d7acc6d1
 
 build:
   noarch: python
