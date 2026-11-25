@@ -1,16 +1,16 @@
 schema_version: 1
 
 context:
-  name: openinference-instrumentation-bedrock
-  version: "0.1.53"
+  version: "0.1.71"
+  build_number: "0"
 
 package:
-  name: ${{ name|lower }}
+  name: openinference-instrumentation-bedrock
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/openinference_instrumentation_bedrock-${{ version }}.tar.gz
-  sha256: 9317e46b057f1b0e2ca9497d37b05814719bb786099c01d7e28fdb8c32ca1d40
+  url: https://files.pythonhosted.org/packages/source/o/openinference-instrumentation-bedrock/openinference_instrumentation_bedrock-${{ version }}.tar.gz
+  sha256: ed8c46d7a161e8d8fd333efb1a42eaf306e485d455c9b5a553b468eec578eb9d
 
 build:
   number: 0
@@ -27,10 +27,11 @@ requirements:
     - opentelemetry-api
     - opentelemetry-instrumentation
     - opentelemetry-semantic-conventions
-    - openinference-instrumentation >=0.1.12
-    - openinference-semantic-conventions >=0.1.9
+    - openinference-instrumentation >=0.1.82
+    - openinference-semantic-conventions >=0.1.46
     - wrapt
-    - dacite
+    - dacite >=1.8.1
+    - typing-extensions
     - botocore
 
 tests:
